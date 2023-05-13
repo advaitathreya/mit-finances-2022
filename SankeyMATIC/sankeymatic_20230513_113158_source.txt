@@ -1,0 +1,109 @@
+// SankeyMATIC diagram inputs - Saved: 5/13/2023, 11:31:58 AM
+// https://sankeymatic.com/build/
+
+// === Nodes and Flows ===
+
+Campus research [38.4] Adjust campus
+
+Sponsored research support [1987.9] MIT
+
+Campus research [846.0] Sponsored research support
+
+Federal [554.8] Campus research
+Non-federal [329.6] Campus research
+
+HHS [148.8] Federal
+DoD [140.4] Federal
+DoE [82.6] Federal
+NSF [107.6] Federal
+NASA [40.3] Federal
+Other federal [35.1] Federal
+
+State/local/foreign govts [29.3] Non-federal
+Foundations [85.8] Non-federal
+Non-profits [37.9] Non-federal
+Industry [176.6] Non-federal
+
+Lincoln [1119.8] Sponsored research support
+
+Federal (Lincoln) [1111.0] Lincoln
+Non-federal (Lincoln) [24.3] Lincoln
+Lincoln [15.5] Adjust Lincoln
+
+SMART [22.1] Sponsored research support
+
+
+Tuition [415.3] MIT
+
+Exec and cont [82.2] Tuition
+UG and G [333.1] Tuition
+
+Sticker price [750.7] UG and G
+UG and G [417.6] Financial aid
+
+UG [268.2] Sticker price
+Grad semester [414.7] Sticker price
+Grad summer [67.8] Sticker price
+
+Investments [1022.2] MIT
+
+Endowment [834.5] Investments
+Other investments [187.7] Investments
+
+Gifts [455.7] MIT
+
+Unrestricted [421.4] Gifts
+Restricted [34.3] Gifts
+
+Other revenue [242.0] MIT
+Auxiliary enterprises [142.1] MIT
+
+// === Moved Nodes ===
+
+move Financial aid 0, -0.02105
+
+// === Settings ===
+
+size w 1600
+  h 1200
+margin l 12
+  r 12
+  t 18
+  b 20
+bg color #ffffff
+  transparent Y
+node w 9
+  h 60
+  spacing 100
+  border 0
+  theme c
+  color #888888
+  opacity 1
+flow curvature 0.42
+  inheritfrom outside-in
+  color #999999
+  opacity 0.45
+layout order exact
+  justifyorigins N
+  justifyends N
+  reversegraph N
+  attachincompletesto nearest
+labels color #000000
+  highlight 0.55
+  fontface sans-serif
+labelname appears Y
+  size 16
+  weight 400
+labelvalue appears Y
+  fullprecision Y
+labelposition first before
+  breakpoint 6
+value format ',.'
+  prefix '$'
+  suffix 'M'
+themeoffset a 9
+  b 0
+  c 0
+  d 0
+meta mentionsankeymatic Y
+  listimbalances Y

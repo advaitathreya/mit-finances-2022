@@ -1,0 +1,76 @@
+// SankeyMATIC diagram inputs - Saved: 5/13/2023, 2:35:26 PM
+// https://sankeymatic.com/build/
+
+// === Nodes and Flows ===
+
+Compensation [965.1] Sponsored research
+
+Sponsored research [633.4] Lincoln and SMART
+
+Sponsored research [331.7] Campus
+
+Campus [272.3] Salaries
+Salaries [6.8] Tenured faculty
+Salaries [1.2] Non-tenured faculty
+Salaries [23.9] Summer
+Salaries [80.4] Graduate student
+Salaries [52.6] Other academic
+Salaries [79.9] Research staff
+Salaries [7.5] Admin staff
+Salaries [6.6] Support staff
+Salaries [2.6] Hourly staff
+Salaries [1.7] Other student
+Salaries [9.1] Not subject to overhead
+
+Campus [59.4] Benefits
+
+
+Compensation [619.5] Instruction and other unsponsored research
+Compensation [527.3] General and admin
+Compensation [198.0] General and admin discrepancy
+
+// === Settings ===
+
+size w 1600
+  h 1200
+margin l 12
+  r 12
+  t 18
+  b 20
+bg color #ffffff
+  transparent Y
+node w 9
+  h 60
+  spacing 100
+  border 0
+  theme c
+  color #888888
+  opacity 1
+flow curvature 0.42
+  inheritfrom outside-in
+  color #999999
+  opacity 0.45
+layout order exact
+  justifyorigins N
+  justifyends N
+  reversegraph N
+  attachincompletesto nearest
+labels color #000000
+  highlight 0.55
+  fontface sans-serif
+labelname appears Y
+  size 16
+  weight 400
+labelvalue appears Y
+  fullprecision Y
+labelposition first before
+  breakpoint 3
+value format ',.'
+  prefix '$'
+  suffix 'M'
+themeoffset a 9
+  b 0
+  c 0
+  d 0
+meta mentionsankeymatic Y
+  listimbalances Y

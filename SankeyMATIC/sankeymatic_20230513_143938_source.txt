@@ -1,0 +1,64 @@
+// SankeyMATIC diagram inputs - Saved: 5/13/2023, 2:39:38 PM
+// https://sankeymatic.com/build/
+
+// === Nodes and Flows ===
+
+//Revenues
+Sponsored research support [1987.9] MIT
+Tuition [415.3] MIT
+Investments [1022.2] MIT
+Gifts [455.7] MIT
+Other revenue [242.0] MIT
+Auxiliary enterprises [142.1] MIT
+
+// Expenses
+MIT [1830.0] Sponsored research
+MIT [1272.9] Instruction and unsponsored research
+MIT [1088.4] General and admin
+MIT [73.9] Surplus
+
+// === Settings ===
+
+size w 1600
+  h 1200
+margin l 12
+  r 12
+  t 18
+  b 20
+bg color #ffffff
+  transparent Y
+node w 9
+  h 60
+  spacing 100
+  border 0
+  theme c
+  color #888888
+  opacity 1
+flow curvature 0.42
+  inheritfrom outside-in
+  color #999999
+  opacity 0.45
+layout order exact
+  justifyorigins N
+  justifyends N
+  reversegraph N
+  attachincompletesto nearest
+labels color #000000
+  highlight 0.55
+  fontface sans-serif
+labelname appears Y
+  size 16
+  weight 400
+labelvalue appears Y
+  fullprecision Y
+labelposition first before
+  breakpoint 4
+value format ',.'
+  prefix '$'
+  suffix 'M'
+themeoffset a 9
+  b 0
+  c 0
+  d 0
+meta mentionsankeymatic Y
+  listimbalances Y

@@ -1,0 +1,93 @@
+// SankeyMATIC diagram inputs - Saved: 5/13/2023, 2:30:26 PM
+// https://sankeymatic.com/build/
+
+// === Nodes and Flows ===
+
+Other sponsored activities [111.4] Sponsored research
+
+MIT [1830.0] Sponsored research
+
+Sponsored research [783.2] Campus research
+
+Campus research [331.7] Campus compensation
+Campus compensation [272.3] Salaries
+Salaries [6.8] Tenured faculty
+Salaries [1.2] Non-tenured faculty
+Salaries [23.9] Summer
+Salaries [80.4] Graduate student
+Salaries [52.6] Other academic
+Salaries [79.9] Research staff
+Salaries [7.5] Admin staff
+Salaries [6.6] Support staff
+Salaries [2.6] Hourly staff
+Salaries [1.7] Other student
+Salaries [9.1] Not subject to overhead
+
+Campus compensation [59.4] Benefits
+
+Campus research [260.1] Campus other
+Campus research [191.4] Campus overhead
+
+Sponsored research [1135.3] Lincoln research
+Lincoln research [622.7] Lincoln compensation
+Lincoln research [465.6] Lincoln other
+Lincoln research [47.0] Lincoln overhead
+
+Sponsored research [22.1] SMART research
+
+MIT [1272.9] Instruction and unsponsored research
+Instruction and unsponsored research [619.5] Instruction compensation
+Instruction and unsponsored research [441.2] Instruction operating
+Instruction and unsponsored research [212.2] Instruction space
+
+MIT [1088.4] General and admin
+General and admin [527.3] General compensation
+General and admin [198.0] General compensation discrepancy
+General and admin [187.6] General operating
+General and admin [175.5] General space
+
+// === Settings ===
+
+size w 1600
+  h 1200
+margin l 12
+  r 12
+  t 18
+  b 20
+bg color #ffffff
+  transparent Y
+node w 9
+  h 60
+  spacing 100
+  border 0
+  theme c
+  color #888888
+  opacity 1
+flow curvature 0.42
+  inheritfrom outside-in
+  color #999999
+  opacity 0.45
+layout order exact
+  justifyorigins N
+  justifyends N
+  reversegraph N
+  attachincompletesto nearest
+labels color #000000
+  highlight 0.55
+  fontface sans-serif
+labelname appears Y
+  size 16
+  weight 400
+labelvalue appears Y
+  fullprecision Y
+labelposition first before
+  breakpoint 3
+value format ',.'
+  prefix '$'
+  suffix 'M'
+themeoffset a 9
+  b 0
+  c 0
+  d 0
+meta mentionsankeymatic Y
+  listimbalances Y
